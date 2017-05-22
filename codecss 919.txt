@@ -1,0 +1,114 @@
+.body{
+	position: relative;
+}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 70vh;
+	filter: grayscale(50%);
+}
+
+.parallax h1{
+	position: absolute;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 2px;
+	color: white;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	background-color: rgba(0,0,0,0.6);
+	padding: 30px;
+}
+
+#parallax_planahead{
+	background-image: url("img/cemetery22.jpg");
+}
+
+#parallax_planforloveone{
+	background-image: url("img/cemetery4.jpg");
+}
+
+#parallax_planforpets{
+	background-image: url("img/cemeterypet.jpg");
+}
+
+/* Breadcrumb */
+.breadcrumb{
+}
+
+.breadcrumb ul{
+    list-style: none;
+    background-color: white;
+    font-size: 18px;
+	line-height:2.5;
+	}
+
+.breadcrumb ul li {
+	display: inline;
+}
+
+.breadcrumb ul li+li:before {
+    padding: 5px;
+    color: black;
+    content: "/\00a0";					/* nonbreakable space */
+}
+
+.breadcrumb ul li a {
+	padding: 10px;
+    text-decoration: none;
+}
+
+.breadcrumb ul li a:hover {
+    color: white;
+    background-color: black;
+	border-radius: 15px;
+}
+
+/* Main Types */
+
+#mainTypes .imagebox{
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.imagebox:hover .overlay {
+  opacity: 0.6;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text a{
+	color: black;
+	text-decoration: none;
+}
